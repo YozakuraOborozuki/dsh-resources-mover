@@ -1,0 +1,39 @@
+DSH Resources Mover
+===================
+本应用程序借助 Deepseek Harness 开发。
+双击 DSH Resources Mover.exe 运行。
+
+运行要求
+--------
+- Windows 10/11 64 位
+- 已安装 Microsoft Edge WebView2 （Windows 11 自带；Windows 10 一般随 Edge 安装）
+
+文件内含
+------------------
+DSH Resources Mover.exe   主程序
+runtime\node.exe          内置 Node 运行时（不要删）
+app\                      扫描/搬运逻辑与界面资源（不要删）
+Microsoft.Web.WebView2.*  界面组件（不要删）
+WebView2Loader.dll        界面组件（不要删）
+logs\server.log           后端日志，出问题时看这里
+WebView2\                 界面缓存，可删（下次自动重建）
+app\state\                搬迁记录、配置备份、体积缓存
+
+使用
+----
+选目标盘 → 勾选确认 → 程序退出 DSH、复制、改配置、重启并验证；
+   验证通过才删原目录，失败自动退回并保留原文件。
+   目标盘已有同名文件夹时会先问“覆盖 / 取消”：取消则不执行；覆盖会先临时备份旧目录，验证通过后再删。
+
+注意
+----
+- 开始移动后会关闭DSH程序，中断当前会话，请确保所有会话均已结束。
+- 为避免数据丢失，建议在移动前备份数据。
+- 仅显示本地磁盘，不显示网络地址机可移动磁盘（不建议移动至该媒介）。
+- 只移动数据/模型/运行环境，不移动插件代码，避免插件加载不到宿主依赖。
+- 关闭窗口会同时结束后台服务；如果正在搬家会先确认。
+
+反馈请联系开发者：
+【GitHub】github.com/YozakuraOborozuki 
+【QQ】3341717658 
+
