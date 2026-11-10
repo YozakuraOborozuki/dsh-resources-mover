@@ -8,16 +8,6 @@ DSH Resources Mover
 - Windows 10/11 64 位
 - 已安装 Microsoft Edge WebView2 （Windows 11 自带；Windows 10 一般随 Edge 安装）
 
-文件内含
-------------------
-DSH Resources Mover.exe   主程序
-runtime\node.exe          内置 Node 运行时（不要删）
-app\                      扫描/搬运逻辑与界面资源（不要删）
-Microsoft.Web.WebView2.*  界面组件（不要删）
-WebView2Loader.dll        界面组件（不要删）
-logs\server.log           后端日志，出问题时看这里
-WebView2\                 界面缓存，可删（下次自动重建）
-app\state\                搬迁记录、配置备份、体积缓存
 
 使用
 ----
