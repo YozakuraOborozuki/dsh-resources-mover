@@ -1,5 +1,7 @@
 DSH Resources Mover
 ===================
+将DSH插件迁移至其他磁盘以节省原磁盘空间。
+--------
 本应用程序借助 Deepseek Harness 开发。
 双击 DSH Resources Mover.exe 运行。
 
